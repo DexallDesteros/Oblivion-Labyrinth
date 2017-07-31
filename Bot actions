@@ -1,0 +1,41 @@
+"""
+Make a word based game with 3 characters.
+"""
+print("test starting")
+#make a system for the game
+
+    
+        
+
+#define the actions the user can use
+descriptions = ["for the game, type: start", "for the lore, type: lore",]
+
+def characters():
+    rep = input().lower()
+    if rep in ["thief", "warrior", "mage"]:
+
+        if rep == "thief":
+            print("you successfully chose the thief")
+
+        if rep == "warrior":
+            print("you successfully chose the thief")
+
+        if rep == "mage":
+            print("you successfully chose the mage")
+
+def UI():
+    print("Welcome to the bot simulator. Choose your action.")
+    for x in descriptions:
+        print(x)
+    response = input().lower()
+    if response in [
+        "start", "lore",
+        ]:
+            if response == "start":
+                characters()
+            if response == "lore":
+                print("You chose the lore.")
+                print("The lore is coming.")
+                
+UI()
+print("Test has ended")
